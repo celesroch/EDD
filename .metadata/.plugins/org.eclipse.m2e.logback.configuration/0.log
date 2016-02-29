@@ -1,0 +1,23 @@
+2016-02-29 20:58:37,478 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: es.salesianos.edu:EDD:1.0.0-SNAPSHOT @ C:\Users\Celeste\Desktop\GIT\EDD\EDD\pom.xml.
+2016-02-29 20:58:37,757 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: es.salesianos:fp:1.0.0-SNAPSHOT @ C:\Users\Celeste\Desktop\GIT\EDD\FP\pom.xml.
+2016-02-29 20:58:40,197 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EDD/src/main/java
+2016-02-29 20:58:40,200 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EDD/src/test/java
+2016-02-29 20:58:41,898 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /FP/src/main/java
+2016-02-29 20:58:41,900 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /FP/src/test/java
+2016-02-29 20:58:42,072 [Worker-6] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 2 project(s) in 9 sec
+2016-02-29 20:58:43,933 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-29 20:58:43,940 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Celeste\Desktop\GIT\EDD\EDD\src\main\resources
+2016-02-29 20:58:43,945 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-29 20:58:43,947 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Celeste\Desktop\GIT\EDD\EDD\src\test\resources
+2016-02-29 20:58:44,314 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-29 20:58:44,317 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Celeste\Desktop\GIT\EDD\FP\src\main\resources
+2016-02-29 20:58:44,322 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-29 20:58:44,324 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Celeste\Desktop\GIT\EDD\FP\src\test\resources
+2016-02-29 20:59:30,481 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-29 20:59:30,485 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Celeste\Desktop\GIT\EDD\FP\src\main\resources
+2016-02-29 20:59:30,489 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-29 20:59:30,491 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Celeste\Desktop\GIT\EDD\FP\src\test\resources
+2016-02-29 20:59:40,628 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-29 20:59:40,631 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Celeste\Desktop\GIT\EDD\FP\src\main\resources
+2016-02-29 20:59:40,634 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-29 20:59:40,637 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Celeste\Desktop\GIT\EDD\FP\src\test\resources

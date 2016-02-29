@@ -2,7 +2,10 @@ package fp;
 
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
-import java.util.List;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
+
 
 public class Calculator {
 
@@ -11,7 +14,8 @@ public class Calculator {
      * este metodo devuelve el Class del object que le pasamos
      */
 	public static Class classTypeOf(Object x) {
-		throw  new NotImplementedException();
+	//	throw  new NotImplementedException();
+		return x.getClass();
 	}
 
 
@@ -19,14 +23,41 @@ public class Calculator {
      * devuelve una lista con los n números de la serie de fibonacci.
      */
 	public static List<Integer> fibonacci(int n) {
-		throw  new NotImplementedException();
+		//throw  new NotImplementedException();
+		List<Integer> list=new ArrayList<Integer>();
+		if(n<1)
+			return list;
+		list.add(1);
+		if(n==1)
+			return list;
+		list.add(1);
+		if(n==2)
+			return list;
+		for(int i=2;i<n;i++)
+			list.add(list.get(i-2)+list.get(i-1));
+		return list;
+
+
+
+
 	}
+
 
 	/*
 	 * Escribir todos los números del number al 0 de step en step.
 	 */
 	public static int[] stepThisNumber(int number, int step) {
-		throw  new NotImplementedException();
+		//throw  new NotImplementedException();
+		if(step==0)
+			return new int[0];
+		int[] list=new int[(number-1)/step];
+		int i=0;
+		while(number>step){
+			number=number-step;
+			list[i]=number;
+			i++;
+			}
+		return list;
 		}
 
 	/*
@@ -35,13 +66,36 @@ public class Calculator {
 	 */
 	public static int[] divisors(int n) {
 		throw  new NotImplementedException();
+		//return ;
 	}
 
 	/*
 	 * Toma como parámetros una cadena de caracteres y devuelve cierto si la cadena resulta ser un palíndromo
 	 */
 	public static boolean checkIsPalindrome(String cadena) {
-		throw  new NotImplementedException();
+		//throw  new NotImplementedException();
+			if (cadena == null) {
+					return false;
+			}
+				cadena = cadena.toLowerCase();
+				String clean = "";
+				String acentos = "áéíóúàèìòù";
+				String noacentos = "aeiouaeiouu";
+
+				for (int i = 0; i < cadena.length(); i++){
+					if (Character.isLetter(cadena.charAt(i))) {
+						if (acentos.indexOf(cadena.charAt(i)) != -1)
+							clean += noacentos.charAt(acentos.indexOf(cadena.charAt(i)));
+						else
+							clean += cadena.charAt(i);
+					}
+				}
+
+				for (int i = 0; i < clean.length() / 2; i++){
+					if (clean.charAt(i) != clean.charAt(clean.length() - 1 - i))
+						return false;
+				}
+				return true;
 	}
 
 	/*
@@ -49,7 +103,33 @@ public class Calculator {
 	 * mostrar: cincuenta y seis
 	 */
 	public static String speakToMe(int n) {
-		throw  new NotImplementedException();
+		//throw  new NotImplementedException();
+		String number = numberToLetter(n);
+		 		return number.substring(0, 1).toUpperCase() + number.substring(1);
+		 	}
+
+		 	public static String numberToLetter(int n) {
+
+		 		String[] numero = new String[] {"cero", "uno", "dos", "tres", "cuatro",
+		 				"cinco", "seis", "siete", "ocho", "nueve", "diez", "once", "doce",
+		 				"trece", "catorce", "quince", "diecis�is"};
+		 		String[] decenas1 = {"dieci", "veinti"};
+		 		String[] decenas2 = {"veinte", "treinta", "cuarenta", "cincuenta",
+		 				"sesenta", "setenta", "ochenta", "noventa"};
+
+		 		if (n < 17)
+		 			return numero[n];
+
+		 		if ((n % 10) == 0)
+		 			return decenas2[(n / 10) - 2];
+
+		 		if (n < 30)
+		 			return decenas1[(n / 10) - 1] + numero[n % 10];
+
+		 	if (n > 99)
+		 			return "M�s de dos d�gitos";
+
+		 		return decenas2[(n / 10) - 2] + " y " + numero[n % 10];
 	}
 
 	/*
@@ -57,13 +137,35 @@ public class Calculator {
 	 * dd-MM-yyyy
 	 */
 	public static boolean isLeapYear(String fecha) {
-		throw  new NotImplementedException();
+		//throw  new NotImplementedException();
+		// create a new calendar
+		   GregorianCalendar cal =
+		   (GregorianCalendar) GregorianCalendar.getInstance();
+
+
+		   // check if it is a leap year
+		   boolean isLeapYear = cal.isLeapYear(cal.get(GregorianCalendar.YEAR));
+
+
+		   // check if 2013 is a leap year
+		   isLeapYear = cal.isLeapYear(2013);
+		   return(isLeapYear);
+
+
 	}
 
 	/*
 	 * este metodo devuelve cierto si la fecha es válida
 	 */
 	public static boolean isValidDate(String date) {
-		throw  new NotImplementedException();
+		//throw  new NotImplementedException();
+		SimpleDateFormat df = new SimpleDateFormat("yyyyMMdd");
+	    try {
+	        df.parse(date);
+	        return true;
+	    } catch (ParseException e) {
+	        return false;
+	    }
+
 	}
 }

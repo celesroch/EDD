@@ -77,3 +77,7 @@
 2016-03-05 21:14:07,610 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Celeste\Desktop\GIT\EDD\FP\src\main\resources
 2016-03-05 21:14:07,614 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-03-05 21:14:07,616 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Celeste\Desktop\GIT\EDD\FP\src\test\resources
+2016-03-05 21:46:37,660 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-05 21:46:37,678 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Celeste\Desktop\GIT\EDD\FP\src\main\resources
+2016-03-05 21:46:37,683 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-05 21:46:37,685 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Celeste\Desktop\GIT\EDD\FP\src\test\resources

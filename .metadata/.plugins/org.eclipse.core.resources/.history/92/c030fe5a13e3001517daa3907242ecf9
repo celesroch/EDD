@@ -65,22 +65,8 @@ public class Calculator {
 	 * divisores que tiene.
 	 */
 	public static int[] divisors(int n) {
-		//throw  new NotImplementedException();
-		int cont=0;
-		int div[]=new int[cont];
-		if(n<1)
-			return null;
-		for(int i=n;i>0;i--)
-			if(n%i==0)
-				cont ++;
-		for(int i=1;i>n;i++)
-			if(n%i==0){
-				cont --;
-				div[cont]=i;
-			}
-		return div;
-		
-	
+		throw  new NotImplementedException();
+		//return ;
 	}
 
 	/*

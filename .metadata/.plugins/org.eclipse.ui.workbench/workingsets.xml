@@ -4,4 +4,5 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/EDD" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/FP" type="4"/>
 </workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1457110058569_1" label="Window Working Set" name="Aggregate for window 1457110058568"/>
 </workingSetManager>

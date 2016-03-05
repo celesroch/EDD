@@ -78,21 +78,10 @@ public class Calculator {
 					return false;
 			}
 				cadena = cadena.toLowerCase();
-				String str = "";
+				String clean = "";
 				String acentos = "áéíóúàèìòù";
-				String noAcentos = "aeiouaeiouu";
-				for(int i=0;i<cadena.length();i++){
-					if(Character.isLetter(cadena.charAt(i))){
-						if(acentos.indexOf(cadena.charAt(i))!=-1)
-							str+=noAcentos.charAt(acentos.indexOf(cadena.charAt(i)));
-						else
-							str+=cadena.charAt(i);
-					}
-				}
-				for(int i=0;i<str.length()/2;i++){
-					if(str.charAt(i)!=str.charAt(str.length()-1-i));
-						return false;
-				}
+				String noacentos = "aeiouaeiouu";
+
 
 				return true;
 	}
@@ -113,7 +102,7 @@ public class Calculator {
 		 				"cinco", "seis", "siete", "ocho", "nueve", "diez", "once", "doce",
 		 				"trece", "catorce", "quince", "diecis�is"};
 		 		String[] decenas1 = {"dieci", "veinti"};
-		 		String[] decenas2 = {"veinte", "treinta", "cu1arenta", "cincuenta",
+		 		String[] decenas2 = {"veinte", "treinta", "cuarenta", "cincuenta",
 		 				"sesenta", "setenta", "ochenta", "noventa"};
 
 		 		if (n < 17)
@@ -164,7 +153,7 @@ public class Calculator {
 	        testDate = sdf.parse(date);
 
 	    }    catch (ParseException e){
-
+	    	
 	    }
 	    return false;
 

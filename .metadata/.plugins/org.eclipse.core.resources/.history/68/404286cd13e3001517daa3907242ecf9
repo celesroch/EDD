@@ -78,11 +78,9 @@ public class Calculator {
 				cont --;
 				div[cont]=i;
 			}
-
-
 		return div;
-
-
+		
+	
 	}
 
 	/*
